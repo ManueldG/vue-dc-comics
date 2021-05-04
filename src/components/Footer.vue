@@ -1,24 +1,13 @@
 <template>
-    <header id="Header">
-        <div class="logo">
-            <a href="#"><img src="../../../img/dc-logo.png" alt="LOGO"></a>
-        </div>
-        <nav>
-            <ul>
-                <li v-for = " ( a , i) in navBar "  :key="i">
-                    <a   :href="(a.href+(i))" :id="i">
-                        {{a.name.toUpperCase()}}
-                    </a> 
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <footer id="Footer">
+        
+    </footer>
 </template>
 
 <script>
 export default {
-    name : "Header",
-    data:function() {
+    name : "footer",
+    data:  function() {
 return {
         navBar: [
                     {
