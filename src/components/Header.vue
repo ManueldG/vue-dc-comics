@@ -85,7 +85,9 @@ li a {
     color: black;
 }
 
-li:hover a{
+li:hover a,
+li:focus a{
     border-bottom: 2px solid blue;
 }
+
 </style>
