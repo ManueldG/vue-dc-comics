@@ -5,8 +5,10 @@
         </div>
         <nav>
             <ul>
-                <li>
-                    <a href="#">CHARACTERS</a> <!--<li v-for="(link, index) in navLinks" :key="'id' + index"><a @click="activeTab(link)" :class="{active: link.active}" :href="link.link">{{link.name}}</a></li> -->
+                <li v-for = " ( a , i) in navBar "  :key="i">
+                    <a   :href="(a.href+(i))" :id="i">
+                        {{a.name.toUpperCase()}}
+                    </a> 
                 </li>
             </ul>
         </nav>
@@ -20,44 +22,44 @@ export default {
 return { 
         navBar: [
                     {
-                        elem: 'characters',
+                        name: 'characters',
                         href: '#',                        
                     },
                     {
                         name: 'comics',
-                        link: '#',
+                        href: '#',
                     },
                     {
                         name: 'movies',
-                        link: '#',
+                        href: '#',
                     },
                     {
                         name: 'tv',
-                        link: '#',
+                        href: '#',
                     },
                     {
                         name: 'games',
-                        link: '#',
+                        href: '#',
                     },
                     {
                         name: 'collectibles',
-                        link: '#',
+                        href: '#',
                     },
                     {
                         name: 'videos',
-                        link: '#',
+                        href: '#',
                     },
                     {
                         name: 'fans',
-                        link: '#',
+                        href: '#',
                     },
                     {
                         name: 'news',
-                        link: '#',
+                        href: '#',
                     },
                     {
                         name: 'shop',
-                        link: '#',
+                        href: '#',
                     }
                 ]
             };
@@ -83,10 +85,11 @@ li {
 li a {
     text-decoration: none;
     color: black;
+    padding-bottom: 40px;
 }
 
 li:hover a,
-li:focus a{
+li *:target {
     border-bottom: 2px solid blue;
 }
 
