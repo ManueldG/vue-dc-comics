@@ -1,22 +1,4 @@
-<template>
-  <div id="Body">
-      <img src="@/assets/img/dc-logo.png" alt="logo">
-      <ul>
-          <Covers v-for="( cover , index ) in covers" :key="index" :detail="cover" />
-      </ul>
-  </div>
-</template>
-
-<script>
-import Covers from '@/components/Covers.vue';
-export default {
-    name : "Body",
-    components: {
-        Covers
-        },
-    data: function(){
-        return {
-            covers:[
+[
     {
         thumb:
             'https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX',
@@ -102,17 +84,3 @@ export default {
         type: 'graphic novel',
     },
 ]
-
-        }
-
-    }
-}
-</script>
-
-<style scoped lang="scss">
-
-#Body{
-    background-color: rgb(43, 105, 221);
-    }
-    
-</style>
