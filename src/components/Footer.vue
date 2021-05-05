@@ -4,7 +4,8 @@
          <div class="social">FOLLOW US
             <ul>
              <li v-for="(social,index) in socials" :key="social+index">
-                 <img :src="'footer-'+social.name.toLowerCase()+'.png'" alt="">{{social.name}}
+                 <img :src="logo" :alt="index">                 
+                 {{social.name}}
              </li>
             </ul>
          </div>
@@ -12,11 +13,10 @@
 </template>
 
 <script>
-
 export default {
     name : "Footer",
     data: function() {
-    return {
+    return {logo : require('"@/../img/footer-"+"Facebook"+".png"'),
             socials : [
                 { 
                 name:'Facebook',
