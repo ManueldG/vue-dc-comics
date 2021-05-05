@@ -1,7 +1,7 @@
 <template>
     <header id="Header">
         <div class="logo">
-            <a href="#"><img src="../../../img/dc-logo.png" alt="LOGO"></a>
+            <a href="#"><img src="@/assets/img/dc-logo.png" alt="LOGO"></a>
         </div>
         <nav>
             <ul>
