@@ -74,6 +74,10 @@ footer{
         height: 200px;
         color: white;
         background-color: transparent;
+        ul{
+            list-style: none;
+        }
+        
     }
     
 }

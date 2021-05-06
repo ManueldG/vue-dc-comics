@@ -18,7 +18,6 @@ export default {
     data: function(){
         return {
             covers
-
         }
 
     }
@@ -29,6 +28,13 @@ export default {
 
 #Body{
     background-color: rgb(43, 105, 221);
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            }
+        
     }
     
 </style>
