@@ -1,15 +1,45 @@
 <template>
     <footer id="Footer">
-        <div class="top">
+        <div class="buy">
             <ul>
-                <li>
-                    <h2>titolo</h2>
-                </li>
-                <li>bla</li>
-                <li>bla</li>
-                <li>bla</li>
-                <li>bla</li>
+            <li><img src="assets/img/buy-comics-digital-comics.png" alt=""></li>
+            <li><img src="assets/img/buy-comics-merchandise.png" alt=""></li>
+            <li><img src="assets/img/buy-comics-shop-locator.png" alt=""></li>
+            <li><img src="assets/img/buy-comics-subscriptions.png" alt=""></li>
+            <li><img src="assets/img/buy-dc-power-visa.png" alt=""></li>
             </ul>
+        </div>
+        <div class="top">
+            <div class="list">
+                <ul>
+                    <li>
+                        <h2>titolo</h2>
+                    </li>
+                    <li>bla</li>
+                    <li>bla</li>
+                    <li>bla</li>
+                    <li>bla</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>titolo</h2>
+                    </li>
+                    <li>bla</li>
+                    <li>bla</li>
+                    <li>bla</li>
+                    <li>bla</li>
+                </ul>
+                <ul>
+                    <li>
+                        <h2>titolo</h2>
+                    </li>
+                    <li>bla</li>
+                    <li>bla</li>
+                    <li>bla</li>
+                    <li>bla</li>
+                </ul>
+            </div>
+            <img src="assets/img/dc-logo.png" alt="">
         </div>
         <div class="bottom">
         <div class="btn">SIGN-UP NOW!</div>
@@ -70,13 +100,34 @@ $black: #333333;
 
 footer{
     background-image: url("/assets/img/footer-bg.jpg");
-    .top{
+    .buy ul{
+            display:flex;
+            justify-content: space-around;
+            background-color: #156ca7;
+            list-style:none;
+            list-style-position:inside;
+
+        }
+    .top{        
+        display: flex;
+        justify-content: space-between;
         height: 200px;
         color: white;
         background-color: transparent;
-        ul{
+        overflow: hidden;
+        .list{
+            display: flex;
+            overflow: hidden;
+            ul{
             list-style: none;
+        }        
         }
+
+        img{
+            height:300px;            
+            transform: translateY(-20%) rotate(45deg) ;
+        }
+        
         
     }
     

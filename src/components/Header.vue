@@ -1,6 +1,7 @@
 <template>
     <header id="Header">
-        <div class="logo">
+        <div class="navigation">
+            <div class="logo">
             <a href="#"><img src="@/assets/img/dc-logo.png" alt="LOGO"></a>
         </div>
         <nav>
@@ -12,6 +13,12 @@
                 </li>
             </ul>
         </nav>
+        </div>
+        
+        <div class="jumbotron">
+            <img src="@/assets/img/jumbotron.jpg" alt="jumbotron">
+        </div>
+        
     </header>
 </template>
 
@@ -71,12 +78,36 @@ return {
 
 </script>
 
-<style>
+<style scoped lang="scss">
 
 header{
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
+
+.jumbotron{
+    width: 100vw;
+    overflow: hidden;
+    
+    img{
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .logo{
+    justify-self: flex-start;
+}
+
 
 
 header li {

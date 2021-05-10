@@ -1,6 +1,8 @@
 <template>
   <div id="Body">
-      <img src="@/assets/img/dc-logo.png" alt="logo">
+      <div class="blue">
+          
+      </div>
       <ul>
           <Covers v-for="( cover , index ) in covers" :key="index" :detail="cover" />
       </ul>

@@ -1,9 +1,7 @@
 <template>
   <div id="App">
     <Header/>
-
     <Body/>
-
     <Footer/>
   </div>
 </template>
@@ -23,12 +21,20 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  
+
+body{
+  margin: 0;
+}
+
+#app {  
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-  
+  box-sizing: border-box;  
+}
+
+ul{
+  margin: 0;
 }
 </style>
