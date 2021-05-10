@@ -4,7 +4,7 @@
           
       </div>
       <ul>
-          <Covers v-for="( cover , index ) in covers" :key="index" :detail="cover" />
+          <Covers v-for="( cover , index ) in covers" :key="index" :detail="cover" /> <!-- passo l'oggetto cover al props detail del componente Covers -->
       </ul>
   </div>
 </template>
